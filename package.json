@@ -9,13 +9,23 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "eslint": "^8.26.0",
     "expo": "~46.0.16",
     "expo-status-bar": "~1.4.0",
     "react": "18.0.0",
     "react-native": "0.69.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "@types/react": "~18.0.0",
+    "@types/react-native": "~0.69.1",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-native": "^4.0.0",
+    "typescript": "^4.6.3"
   },
-  "private": true
+  "private": true,
+  "author": "Fergus Meiklejohn <fergusmeiklejohn@gmail.com>",
+  "license": "MIT"
 }
