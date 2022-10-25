@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, Image } from "react-native";
 interface chatMessage {
   id: string;
   user: {
-    avatar: string;
+    image: string;
     name: string;
   };
   lastMessage: {
@@ -17,7 +17,7 @@ export default function ChatListItem(props: chatMessage) {
   const { id, user, lastMessage } = props;
   return (
     <View style={styles.container}>
-      <Image source={{ uri: user.avatar }} style={styles.avatar} />
+      <Image source={{ uri: user.image }} style={styles.avatar} />
       <View style={styles.content}>
         <View style={styles.row}>
           <Text style={styles.name}>{user.name}</Text>

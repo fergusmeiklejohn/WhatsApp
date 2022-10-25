@@ -7,7 +7,7 @@ import ChatListItem from "./app/components/chatListItem";
 const msg = {
   id: "1",
   user: {
-    avatar:
+    image:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/lukas.jpeg",
     name: "Lukas",
   },
