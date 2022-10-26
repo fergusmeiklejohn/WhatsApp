@@ -3,10 +3,14 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import ChatsScreen from "../screens/chatsScreen";
 import NotImplimentedScreen from "../screens/notImplimentedScreen";
 import { Ionicons, Entypo } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
+
+import { NavigationProps } from "../navigation/navigator";
 
 const Tab = createBottomTabNavigator();
 
 export default function MainTabNavigator() {
+  const navigator = useNavigation<NavigationProps>();
   return (
     <Tab.Navigator
       initialRouteName="Chats"
@@ -51,7 +55,7 @@ export default function MainTabNavigator() {
           ),
           headerRight: () => (
             <Entypo
-              onPress={() => console.warn("new message")}
+              onPress={() => navigator.navigate("Contacts")}
               name="new-message"
               size={18}
               color={"royalblue"}

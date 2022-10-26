@@ -7,10 +7,12 @@ import {
 
 import ChatScreen from "../screens/chatScreen";
 import MainTabNavigator from "./mainTabNavigator";
+import ContactsScreen from "../screens/contactsScreen";
 
 type RootStackParamsList = {
   Main: undefined;
   Chat: { id: string; name: string };
+  Contacts: undefined;
 };
 
 export type NavigationProps = NativeStackNavigationProp<RootStackParamsList>;
@@ -31,6 +33,7 @@ export default function Navigator() {
           options={{ headerShown: false }}
         />
         <Stack.Screen name="Chat" component={ChatScreen} />
+        <Stack.Screen name="Contacts" component={ContactsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
