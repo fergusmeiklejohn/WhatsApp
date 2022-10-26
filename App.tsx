@@ -2,25 +2,12 @@ import React from "react";
 
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
-import ChatListItem from "./app/components/chatListItem";
-
-const msg = {
-  id: "1",
-  user: {
-    image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/lukas.jpeg",
-    name: "Lukas",
-  },
-  lastMessage: {
-    createdAt: "2 minutes ago",
-    text: "Hey, how are you?",
-  },
-};
+import ChatListScreen from "./app/components/screens/chatsScreen";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ChatListItem id={msg.id} user={msg.user} lastMessage={msg.lastMessage} />
+      <ChatListScreen />
       <StatusBar style="auto" />
     </View>
   );
