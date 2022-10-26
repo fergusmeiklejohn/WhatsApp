@@ -6,12 +6,14 @@ import messages from "../../assets/data/messages.json";
 
 import Message from "../components/message";
 import { FlashList } from "@shopify/flash-list";
+import InputBox from "../components/inputBox";
 
 export default function ChatScreen() {
   return (
     <ImageBackground source={bg} style={styles.container}>
       <FlashList
         data={messages}
+        estimatedItemSize={94}
         renderItem={({ item }) => (
           <Message
             id={item.id}
@@ -21,6 +23,7 @@ export default function ChatScreen() {
           />
         )}
       />
+      <InputBox />
     </ImageBackground>
   );
 }
