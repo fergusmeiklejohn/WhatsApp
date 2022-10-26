@@ -6,7 +6,7 @@ import { FlashList } from "@shopify/flash-list";
 import chats from "../../assets/data/chats.json";
 import { View, StyleSheet } from "react-native";
 
-export default function ChatListScreen() {
+export default function ChatsScreen() {
   return (
     <View style={styles.container}>
       <FlashList
