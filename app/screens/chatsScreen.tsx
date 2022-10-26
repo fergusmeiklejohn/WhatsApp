@@ -1,9 +1,9 @@
 import React from "react";
-import ChatListItem from "../chatListItem";
+import ChatListItem from "../components/chatListItem";
 
 import { FlashList } from "@shopify/flash-list";
 
-import chats from "../../../assets/data/chats.json";
+import chats from "../../assets/data/chats.json";
 import { View, StyleSheet } from "react-native";
 
 export default function ChatListScreen() {
